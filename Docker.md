@@ -32,13 +32,13 @@ created: 2023-06-28 02:58:42Z
 
 - Virtualni strojevi (VM) su apstrakcija fizičkog hardvera koji pretvara jedan poslužitelj u više poslužitelja. Hipervizor omogućuje rad više VM-ova na jednom stroju. Svaki VM uključuje punu kopiju operativnog sustava, aplikacije, potrebne binarne datoteke i biblioteke - koje zauzimaju desetke GB. VM također mogu biti spori za pokretanje. Donji dijagram daje vizualni prikaz kako bi izgledalo pokretanje virtualnog stroja
 
-![2](/home/david/Desktop/2.png)
+![2](./2.png)
 
 ### Kontejneri
 
 - Kontejneri su apstrakcija na sloju aplikacije koja zajedno pakira kod i zavisnosti. Više kontejnera može raditi na istom stroju i dijeliti jezgro OS-a s drugim kontejnerima, od kojih svaki radi kao izolirani procesi u korisničkom prostoru. Kontejneri zauzimaju manje prostora od VM-a (slike kontejnera su obično veličine desetine MB), mogu da obrađuju više aplikacija i zahtevaju manje VM-ova i operativnih sistema.
 
-![3](/home/david/Desktop/3.png)
+![3](./3.png)
 
 * * *
 # Docker Engine
@@ -56,7 +56,7 @@ created: 2023-06-28 02:58:42Z
 3. Jednostavnost i pristupačnost Docker CLI-a 
 
 
-![4](/home/david/Desktop/4.png)
+![4](./4.png)
 
 
 - Ispod haube, Docker Engine je klijent-server aplikacija sa sljedećim glavnim komponentama:
@@ -98,7 +98,7 @@ Ova Docker datoteka sadrži četiri naredbe, od kojih svaka stvara sloj. Izjava 
 
 Svaki sloj samo je skup razlika u odnosu na sloj prije njega. Slojevi se slažu jedan na drugi. Kada stvorite novi kontejner, dodajete novi sloj za pisanje na vrh donjih slojeva. Ovaj sloj se često naziva "sloj kontejnera". Sve promjene napravljene na kontejneru koji radi, kao što je pisanje novih datoteka, modificiranje postojećih datoteka i brisanje datoteka, zapisuju se u ovaj tanki sloj kontejnera za pisanje. Donji dijagram prikazuje spremnik temeljen na Ubuntu 15.04 slici.
 
-![5](/home/david/Desktop/5.png)
+![5](./5.png)
 
 
 ## Sažetak
@@ -129,6 +129,6 @@ U ovom odjeljku opisali smo što je Dockerfile i kako se koristi za stvaranje sl
 
 1. Kada koristite repozitorije unutar Docker Hub-a, možete pogledati nedavno dodane oznake i automatizirane nadogradnje na svojoj stranici repozitorija i jednostavno filtrirati slike kao što je prikazano u nastavku:
 
-![6](/home/david/Desktop/6.png)
+![6](./6.png)
 
 
