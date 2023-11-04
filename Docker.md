@@ -131,3 +131,16 @@ Nakon što izgradite svoju Docker sliku prema uputama navedenim u Docker datotec
 ![6](./6.png)
 
 
+* * *
+# AMAZON ECS
+* * *
+
+![7](./7.png)
+
+### Što je Amazon ECS?
+
+Amazon Elastic Container Service (Amazon ECS) je visoko skalabilna, brza usluga upravljanja kontejnerima koja olakšava pokretanje, zaustavljanje i upravljanje tim kontejnerima na klasteru. U ovom kontekstu, usluga je konfiguracija koja nam omogućuje pokretanje i održavanje određenog broja zadataka istovremeno u klasteru. Možete pokrenuti svoje zadatke i usluge na infrastrukturi bez poslužitelja kojom upravlja AWS Fargate. Alternativno, za veću kontrolu nad svojom infrastrukturom, možemo pokretati svoje zadatke i usluge na klasteru instanci Amazon EC2 kojom upravljamo.
+
+### Zašto Amazon ECS?
+
+Amazon ECS ima niz različitih slučajeva upotrebe i dobro se integrira s ostatkom AWS ekosustava. Osim toga, budući da je ECS bio temeljni stup za ključne Amazonove usluge, može se izvorno integrirati s drugim uslugama kao što su Amazon Route 53, Secrets Manager, AWS IAM i Amazon CloudWatch, pružajući nam poznato iskustvo za implementaciju i mjerenje svojih kontejnera. Slučajevi upotrebe korisnika Amazon ECS-a kreću se od postavljanja web aplikacija pa sve do slučajeva upotrebe strojnog učenja, tako da ako se vaša aplikacija može pokrenuti unutar kontejnera, vrlo je velika vjerojatnost da ćete moći koristiti Amazon ECS kao svoje najčešće rješenje za orkestraciju kontejnera .
