@@ -2,16 +2,14 @@
 title: Docker-Task-14
 updated: 2023-11-04 15:21:27Z
 created: 2023-06-28 02:58:42Z
-latitude: 43.85625860
-longitude: 18.41307630
-altitude: 0.0000
+
 ---
 
 # Docker - Task-14
 
 # Modernizacija aplikacija koristeci AWS i Docker
 
-![1](/home/david/Desktop/1.png)
+![1](./1.png)
 
 * * *
 ## Uvod
