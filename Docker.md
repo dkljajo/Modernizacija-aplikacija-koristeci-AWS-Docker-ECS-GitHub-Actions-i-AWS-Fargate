@@ -144,3 +144,13 @@ Amazon Elastic Container Service (Amazon ECS) je visoko skalabilna, brza usluga 
 ### Zašto Amazon ECS?
 
 Amazon ECS ima niz različitih slučajeva upotrebe i dobro se integrira s ostatkom AWS ekosustava. Osim toga, budući da je ECS bio temeljni stup za ključne Amazonove usluge, može se izvorno integrirati s drugim uslugama kao što su Amazon Route 53, Secrets Manager, AWS IAM i Amazon CloudWatch, pružajući nam poznato iskustvo za implementaciju i mjerenje svojih kontejnera. Slučajevi upotrebe korisnika Amazon ECS-a kreću se od postavljanja web aplikacija pa sve do slučajeva upotrebe strojnog učenja, tako da ako se vaša aplikacija može pokrenuti unutar kontejnera, vrlo je velika vjerojatnost da ćete moći koristiti Amazon ECS kao svoje najčešće rješenje za orkestraciju kontejnera .
+
+
+### Zašto korisnici vole koristiti Amazon ECS
+
+Amazon ECS omogućuje korisnicima da se usredotoče na izgradnju aplikacija, a ne na infrastrukturu. 
+Amazon ECS pruža okruženja svim korisnicima kako bi se poboljšala brzina razvojnih programera, tako da ne morate brinuti o različitim alatima za pokretanje vaših kontejnera.
+Amazon ECS će brzo i neprimjetno skalirati umjesto vas, tako da to ne morate raditi ručno. 
+Na vama kao korisniku je smanjeno operativno opterećenje jer je AWS uklonio težak posao upravljanja infrastrukturom kako se zahtjevi mijenjaju na vašoj aplikaciji.
+Amazon ECS je dizajniran tako da je sigurnost na prvom mjestu i izoliran je po dizajnu. 
+Korisnici koji koriste Amazon ECS mogu s lakoćom implementirati svoje aplikacije i upravljati njima, jer je Amazon ECS izgrađen s jedinstvenom sigurnošću u svim okruženjima i održava se automatizacijom.
