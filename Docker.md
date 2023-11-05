@@ -214,4 +214,20 @@ The Docker Compose CLI omogucuje programerima da koriste nativne Docker komande 
 
 ![17](./17.png)
 
+`git clone https://github.com/"your github username"/docker-compose-ecs-sample`
 
+![18](./18.png)
+
+# Bildamo sliku lokalno
+
+`docker-copmose.yml`
+
+![19](./19.png)
+
+`docker compose build`
+
+![20](./20.png)
+
+`docker images`
+
+![21](./21.png)
