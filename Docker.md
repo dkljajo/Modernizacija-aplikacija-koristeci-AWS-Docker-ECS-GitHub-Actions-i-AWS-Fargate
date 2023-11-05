@@ -176,8 +176,42 @@ Korisnici koji koriste Amazon ECS mogu s lakoćom implementirati svoje aplikacij
 
 ![11](./11.png)
 
+
 ![12](./12.png)
 
 ## 5. Promijenuti IAM postavke za nase radno okruzenje
 
 ![13](./13.png)
+
+## 6. Konfigurirati Docker na Cloud9
+
+![14](./14.png)
+
+![15](./15.png)
+
+![16](./16.png)
+
+* * *
+# Docker Buildkit i Docker Compose
+* * *
+
+- Docker Compose je alat za definiranje i pokretanje Docker aplikacija s više kontejnera.
+- Uz Docker Compose, koristite YAML datoteku za konfiguraciju usluga svoje aplikacije.
+- Zatim, jednom naredbom, kreirate i pokrećete sve usluge iz svoje konfiguracijske datoteke.
+- Primjeri bi bili dodavanje baze podataka ili mehanizma za predmemoriju za vašu aplikaciju.
+
+## Kako se Docker Compose razlikuje od Dockerfiles
+
+- Korisnici koji se tek upoznaju s kontejnerima i Dockerom mogu biti stvarno zbunjeni kada i gdje koristiti Dockerfiles i Docker Compose datoteke.
+- Iako postoje situacije u kojima možete koristiti jedno ili drugo, zapravo se svodi na složenost vaše aplikacije koju planirate implementirati.
+- U modernim aplikacijama vrlo je uobičajeno vidjeti da aplikacije koriste oboje. To znači da možete imati Docker Compose datoteku koja će se oslanjati na Dockerfile kako bi izgradila vašu aplikaciju. U ovom odjeljku naučit ćemo kako upotrijebiti oboje u izradi naše aplikacije pa ako to nema smisla u ovom trenutku.
+
+## Docker Compose integracija sa Amazon ECS
+
+The Docker Compose CLI omogucuje programerima da koriste nativne Docker komande da pokrenu aplikacije u  Amazon Elastic Container Service (Amazon ECS) kada prave cluod-bazirane aplikacije.
+
+## Primjer prikaza arhitekture aplikacije
+
+![17](./17.png)
+
+
