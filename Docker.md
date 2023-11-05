@@ -154,3 +154,13 @@ Amazon ECS će brzo i neprimjetno skalirati umjesto vas, tako da to ne morate ra
 Na vama kao korisniku je smanjeno operativno opterećenje jer je AWS uklonio težak posao upravljanja infrastrukturom kako se zahtjevi mijenjaju na vašoj aplikaciji.
 Amazon ECS je dizajniran tako da je sigurnost na prvom mjestu i izoliran je po dizajnu. 
 Korisnici koji koriste Amazon ECS mogu s lakoćom implementirati svoje aplikacije i upravljati njima, jer je Amazon ECS izgrađen s jedinstvenom sigurnošću u svim okruženjima i održava se automatizacijom.
+
+* * *
+# Preduvjeti za zadatak
+* * *
+
+##  1. Kreirati vlastiti AWS racun
+
+## 2. Kreirati radno okruženje
+
+![9](./9.png)
