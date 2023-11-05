@@ -255,4 +255,10 @@ The Docker Compose CLI omogucuje programerima da koriste nativne Docker komande 
 
 ![25](./25.png)
 
-`docker compose up`
+`docker compose up -d`
+
+![26](./26.png)
+
+`docker compose logs`
+
+`![27](./27.png)
