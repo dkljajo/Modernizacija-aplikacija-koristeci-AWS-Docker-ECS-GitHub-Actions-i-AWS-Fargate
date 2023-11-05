@@ -262,3 +262,9 @@ The Docker Compose CLI omogucuje programerima da koriste nativne Docker komande 
 `docker compose logs`
 
 `![27](./27.png)
+
+## Pokrenuti aplikaciju
+
+`curl http://localhost:3000`
+
+
