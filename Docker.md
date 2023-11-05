@@ -242,12 +242,11 @@ The Docker Compose CLI omogucuje programerima da koriste nativne Docker komande 
 
 ![22](./22.png)
 
-`docker tag docker-compose-ecs-sample_backend:latest ${DOCKER_HUB_ID}/docker-compose-ecs-sample_backend:latest`
-`docker tag docker-compose-ecs-sample_frontend:latest ${DOCKER_HUB_ID}/docker-compose-ecs-sample_frontend:latest`
+`docker push ${DOCKER_HUB_ID}/docker-compose-ecs-sample_backend:latest`
 
 ![23](./23.png)
 
-`docker push ${DOCKER_HUB_ID}/docker-compose-ecs-sample_backend:latest`
-docker push ${DOCKER_HUB_ID}/docker-compose-ecs-sample_frontend:latest`
+
+`docker push ${DOCKER_HUB_ID}/docker-compose-ecs-sample_frontend:latest`
 
 ![24](./24.png)
