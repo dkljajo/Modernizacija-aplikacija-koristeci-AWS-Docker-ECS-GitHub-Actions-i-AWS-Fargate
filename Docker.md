@@ -163,7 +163,7 @@ Korisnici koji koriste Amazon ECS mogu s lakoćom implementirati svoje aplikacij
 
 ## 2. Kreirati radno okruzenje
 
-![8(./8.png)
+![8](./8.png)
 
 ![9](./9.png)
 
