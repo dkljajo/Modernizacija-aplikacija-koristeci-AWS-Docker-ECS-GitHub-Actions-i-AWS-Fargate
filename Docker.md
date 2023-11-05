@@ -168,11 +168,16 @@ Korisnici koji koriste Amazon ECS mogu s lakoćom implementirati svoje aplikacij
 ![9](./9.png)
 
 
-## 2. Kreirati IAM rolu za nase radno okruzenje
+## 3. Kreirati IAM rolu za nase radno okruzenje
 
 ![10](./10.png)
 
-## 2.Zakaciti IAM rolu za nase radno okruzenje
+## 4.Zakaciti IAM rolu za nase radno okruzenje
 
 ![11](./11.png)
 
+![12](./12.png)
+
+## 5. Promijenuti IAM postavke za nase radno okruzenje
+
+![13](./13.png)
