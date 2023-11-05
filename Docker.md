@@ -231,3 +231,23 @@ The Docker Compose CLI omogucuje programerima da koriste nativne Docker komande 
 `docker images`
 
 ![21](./21.png)
+
+## Gurnuti (pushati) slike na Docker Hub
+
+`DOCKER_HUB_ID=FILL_ME_WITH_YOUR_DOCKER_HUB_ID`
+
+``$ docker login -u ${DOCKER_HUB_ID}
+Password: 
+Login Succeeded``
+
+![22](./22.png)
+
+``docker tag docker-compose-ecs-sample_backend:latest ${DOCKER_HUB_ID}/docker-compose-ecs-sample_backend:latest
+docker tag docker-compose-ecs-sample_frontend:latest ${DOCKER_HUB_ID}/docker-compose-ecs-sample_frontend:latest
+
+![23](./23.png)
+
+docker push ${DOCKER_HUB_ID}/docker-compose-ecs-sample_backend:latest
+docker push ${DOCKER_HUB_ID}/docker-compose-ecs-sample_frontend:latest``
+
+![24](./24.png)
