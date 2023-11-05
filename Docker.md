@@ -161,6 +161,18 @@ Korisnici koji koriste Amazon ECS mogu s lakoćom implementirati svoje aplikacij
 
 ##  1. Kreirati vlastiti AWS racun
 
-## 2. Kreirati radno okruženje
+## 2. Kreirati radno okruzenje
+
+![8(./8.png)
 
 ![9](./9.png)
+
+
+## 2. Kreirati IAM rolu za nase radno okruzenje
+
+![10](./10.png)
+
+## 2.Zakaciti IAM rolu za nase radno okruzenje
+
+![11](./11.png)
+
