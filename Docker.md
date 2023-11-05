@@ -250,3 +250,9 @@ The Docker Compose CLI omogucuje programerima da koriste nativne Docker komande 
 `docker push ${DOCKER_HUB_ID}/docker-compose-ecs-sample_frontend:latest`
 
 ![24](./24.png)
+
+## Pokretanje aplikacije lokalno
+
+![25](./25.png)
+
+`docker compose up`
