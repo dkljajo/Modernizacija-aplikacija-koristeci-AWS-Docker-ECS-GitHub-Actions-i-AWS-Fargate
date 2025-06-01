@@ -12,11 +12,11 @@ created: 2023-06-28 02:58:42Z
 ![1](./1.png)
 
 * * *
-## Uvod
+## Uvod 
 
 * * *
 
-### Šta je kontejner
+### Sta je kontejner
 
 - Kontejner je standardna jedinica softvera koja pakira kod i sve njegove ovisnosti kako bi se aplikacije mogle brzo i pouzdano izvoditi iz jednog računalnog okruženja u drugo. 
 - Slika kontejnera je lagani, samostalni, izvršni paket softvera koji uključuje sve što je potrebno za pokretanje aplikacije: kod, vrijeme izvođenja, sistemske alate, sistemske biblioteke i postavke.
