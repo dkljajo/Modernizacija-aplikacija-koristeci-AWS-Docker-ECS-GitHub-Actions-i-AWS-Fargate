@@ -1,4 +1,3 @@
-
 # Modernizacija aplikacija koristeći AWS, Docker, ECS, GitHub Actions i AWS Fargate
 
 ![Build Status](https://github.com/dkljajo/Modernizacija-aplikacija-koristeci-AWS-Docker-ECS-GitHub-Actions-i-AWS-Fargate/actions/workflows/deploy.yml/badge.svg)
@@ -9,6 +8,7 @@
 
 ## 1️⃣ Struktura foldera
 
+```
 Modernizacija-aplikacija/
 ├── .github/workflows/deploy.yml
 ├── ecs-task-def.json
@@ -17,15 +17,14 @@ Modernizacija-aplikacija/
 ├── package.json
 ├── test/index.test.js
 └── README.md
-
-yaml
-Copy code
+```
 
 ---
 
 ## 2️⃣ Fajlovi i sadržaji
 
 ### 📌 O projektu
+
 Ovaj repozitorij demonstrira modernizaciju aplikacije koristeći:
 
 - **Docker** za containerizaciju
@@ -39,23 +38,23 @@ Sve je automatizirano tako da push u `main` branch builda, testira i deploya apl
 
 ## 🚀 Glavne komponente
 
-├── .github/workflows/deploy.yml # CI/CD workflow
-├── ecs-task-def.json # ECS Task Definition
-├── Dockerfile # Docker build definicija
-├── docker-compose.yml # Lokalni razvoj
-├── package.json # Scripts za test i lint
+```
+├── .github/workflows/deploy.yml  # CI/CD workflow
+├── ecs-task-def.json             # ECS Task Definition
+├── Dockerfile                    # Docker build definicija
+├── docker-compose.yml            # Lokalni razvoj
+├── package.json                  # Scripts za test i lint
 ├── test/
-│ └── index.test.js # Smoke test
+│   └── index.test.js             # Smoke test
 └── README.md
-
-yaml
-Copy code
+```
 
 ---
 
 ## 🐳 Docker konfiguracija
 
 ### **Dockerfile**
+
 ```dockerfile
 FROM node:20-alpine
 WORKDIR /app
@@ -64,9 +63,11 @@ RUN npm ci --only=production
 COPY . .
 EXPOSE 3000
 CMD ["node", "index.js"]
-docker-compose.yml
-yaml
-Copy code
+```
+
+### **docker-compose.yml**
+
+```yaml
 version: '3.9'
 services:
   app:
@@ -78,17 +79,19 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
-⚙️ CI/CD Workflow (GitHub Actions)
-Build i test Docker image
+```
 
-Push image u AWS ECR
+---
 
-Deploy na AWS ECS Fargate
+## ⚙️ CI/CD Workflow (GitHub Actions)
 
-Fajl: .github/workflows/deploy.yml
+- Build i test Docker image  
+- Push image u AWS ECR  
+- Deploy na AWS ECS Fargate  
 
-yaml
-Copy code
+**Fajl:** `.github/workflows/deploy.yml`
+
+```yaml
 name: CI/CD Pipeline
 
 on:
@@ -134,35 +137,48 @@ jobs:
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
-🧪 Testovi i statička analiza
-Smoke testovi: test/index.test.js
+```
 
-ESLint: npm run lint
+---
 
-Pokretanje testova:
+## 🧪 Testovi i statička analiza
 
-bash
-Copy code
+- Smoke testovi: `test/index.test.js`  
+- ESLint: `npm run lint`
+
+**Pokretanje testova:**
+
+```bash
 npm install
 npm test
 npm run lint
-📌 Lokalno pokretanje
-bash
-Copy code
+```
+
+---
+
+## 📌 Lokalno pokretanje
+
+```bash
 docker-compose up --build
-Aplikacija je dostupna na: http://localhost:3000
+```
 
-✅ Badge-ovi
-Build Status: pokazuje je li CI/CD workflow uspješno prošao
+Aplikacija je dostupna na: [http://localhost:3000](http://localhost:3000)
 
-Coverage: 100% (primjer smoke test)
+---
 
-Security Scan: prošao sve sigurnosne provjere
+## ✅ Badge-ovi
 
-Fajlovi
-package.json
-json
-Copy code
+- **Build Status:** pokazuje je li CI/CD workflow uspješno prošao  
+- **Coverage:** 100% (primjer smoke test)  
+- **Security Scan:** prošao sve sigurnosne provjere
+
+---
+
+## Fajlovi
+
+### **package.json**
+
+```json
 {
   "scripts": {
     "test": "jest",
@@ -173,15 +189,19 @@ Copy code
     "eslint": "^8.0.0"
   }
 }
-test/index.test.js
-javascript
-Copy code
+```
+
+### **test/index.test.js**
+
+```javascript
 test('smoke test', () => {
   expect(1 + 1).toBe(2);
 });
-ecs-task-def.json
-json
-Copy code
+```
+
+### **ecs-task-def.json**
+
+```json
 {
   "family": "my-ecs-task",
   "networkMode": "awsvpc",
@@ -199,5 +219,6 @@ Copy code
     }
   ]
 }
-css
-Copy code
+```
+
+
